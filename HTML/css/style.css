@@ -1,0 +1,64 @@
+* {font-family: 'Montserrat', sans-serif;}
+h2 { color :#ff0000; }
+/* hello-*/
+.xpto {width: 300px;
+      height: 300px;
+    background: #ff0000 url("../Images/bot_off.png")no-repeat center center;
+    cursor: pointer;
+    /*display: none;*/
+}
+
+.xpto:hover {
+    background: #0f0 !important;
+    transition: backgrund-color 10s ease ;
+    /*display: none;*/
+}
+
+.xpto.n2 {
+    background: #00f;
+    transition: background-color 0.5s ease;
+}
+
+.xpto.n2:hover {
+    background: #f0f;
+    transition: background-color 0.5s ease;
+}
+
+#obj1{width: 100px; height: 50px;}
+#obj2{width: 200px; height: 20px;}
+#obj3{width: 300px; height: 200px;}
+#obj1, #obj2, #obj3{border: 1px solid #ccc;float: right;}
+
+/**menu**/
+
+.areaUtil{width: 1000px; margin: 10px auto;}
+.zonaLogo{width: 200px; margin: 0 auto;}
+.zonaMenu{width: 100%; BORDER: 1px solid #f00;}
+.menuOps{width: 33%; float:left; text-align:center;}
+
+/**estilos jogo do galo **/
+.caixaMae {
+    width:606px;
+    position:relative;
+    margin: 0 auto;
+}
+.caixa{width: 200px; height: 200px; 
+    float: left; 
+    border: 1px solid #0f0;
+    /* posicionar o texto nas caixas */
+    text-align:center; line-height: 2; font-size:100px;
+    cursor:pointer;
+    background-color:#f05;
+    border-color: #00f;
+}
+         
+.caixa.n1 {}
+.caixa.n2 {}
+.caixa.n3 {}
+.caixa.n4 {}
+.caixa.n5 {}
+.caixa.n6 {}
+.caixa.n7 {}
+.caixa.n8 {}
+.caixa.n9 {}
+
