@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container-fluid">
+            <ul class="pad-5-top">
+                <a class="login" href="./index.html">voltar</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt3">
+            <div class="col-4">
+                <img src="./img/cao.png" class="img-responsive"/>
+                
+        </div>
+        <div class="col-8">
+            <h2 id="headerSobreMim" class="text-danger">Sobre mim ?</h2>
+
+                <p id=txt class="txt text-secondary">
+                    Los Pingüinos me la van a Mascar   
+                </p>
+                <p id=txt class="txt text-secondary">
+                    Los Pingüinos me la van a Mascar
+                    
+                </p>
+            </div>
+    </div>
+    
+</body>
+</html>
