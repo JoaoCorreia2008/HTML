@@ -75,8 +75,7 @@
                     <h3>Cão</h3>
                     <p> Queres saber curiosidades sobre os cães
                         <br>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
-                            Mais </button>
+                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
 
                     </p>
                 </div>
@@ -123,8 +122,7 @@
                     <h3>Gato</h3>
                     <p> Queres saber curiosidades sobre os gatos
                         <br>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
-                            Mais </button>
+                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
 
                     </p>
                 </div>
@@ -171,8 +169,7 @@
                     <h3>Animais</h3>
                     <p> Queres saber curiosidades sobre os animais 
                         <br>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
-                            Mais </button>
+                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
 
                     </p>
                 </div>
