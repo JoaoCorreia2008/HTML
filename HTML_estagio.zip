@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
         <title>Site vet</title>
 </head>
 
@@ -25,133 +26,205 @@
     </div>
 
 
-    <nav class="container-fluid">
-        <div class="container mt-5 mb-3">
-            <h1 class="float-end">Comunidade de Veterinarios </h1>
-            <br>
-            <p class="text-center mt-5 mb-3">
-                aaaaaaaaaaaaaa
-                <br>
-                aaaaaaaaaaaaaa
-            </p>
-        </div>
-    </nav>
-    
+    <div class="container-fluid">
 
-    <div class="container mt-3 mb-5" style="background: #fff;">
-        <div class="row">
-            <h1 class="text-center">CURIOSIDADES </h1>
-            <div class="col-md-4"> </div>
-            <!--Inicio noticia #1-->
-            <div class="col-md-2 col-sm-10 mar-5-right text-center">
-                <div style="background: #fff url('./img/cao.png') no-repeat center center;
-                -webkit-background-size: contain;
-                -moz-background-size: contain;
-                -o-background-size:contain;
-                background-size: contain;
-                height: 200px;"></div>
-                <h3>Cão</h3>
-                <p> Queres saber curiosidades sobre os cães
+        <nav class="container navbar2">
+            <div class="row mt-4">
+                <div class="col-5 col-md-4">
+                    <img src="./img/cao.png" class="img-responsive" />
+
+                </div>
+                <div class="col-7 col-md-8 pad-6-top pad7-right pad7-lefht text-end ">
+
+                    <h4 class="text">VetComunity
+                        <br>
+                        Cuidando de vidas
+                        <br>
+                        Conectando Proficionais
+                    </h4>
                     <br>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noticia1">Ver
-                        Noticia </button>
 
-                </p>
+                    <p class="pad7-lefht fontsize">
+                        A VetComunity é o ponto de encontro para veterinários apaixonados! Aqui, partilhamos
+                        conhecimento, trocamos experiências e acompanhamos as últimas novidades do mundo animal.
+                        <br>
+                        Junte-se a uma comunidade dedicada ao bem-estar dos animais e à evolução da medicina
+                        veterinária!
+                    </p>
+
+                    <div class="pad7-lefht">
+                        <div class=" container navbar3">
+                            <h1>ola</h1>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <!--Fim noticia #1-->
+        </nav>
+        <div class="container mt-3 mb-5" style="background: bisque; height: 40%;">
+            <div class="row">
+                <h1 class="text-center">CURIOSIDADES </h1>
+                <!--Inicio#1-->
+                <div class="col-md-4 col-sm-12 text-center">
 
-            <!-- modal para a noticia#1-->
-            <div id="noticia1" class="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img src="./img/cao.png"
+                            style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                    </div>
 
-                        <div class="modal-header">
-                            <h4 class="modal-title">Sabias que </h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
+                    <h3>Cão</h3>
+                    <p> Queres saber curiosidades sobre os cães
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
+                            Mais </button>
 
+                    </p>
+                </div>
+                <!--Fim #1-->
 
+                <!-- modal #1-->
+                <div id="cao" class="modal">
+                    <div class="modal-dialog">
                         <div class="modal-content">
-                            <iframe width="100%" height="315"
-                                src="https://www.youtube.com/embed/8z6MrVdS5WA?si=puf82vK3DNC0Gw2A"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <div class="modal-header">
+                                <h6 class="modal-title">Queres descobir 100 coriosidades sobre os cães </h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+
+                            <div class="modal-content">
+                                <iframe width="100%" height="350"
+                                    src="https://www.youtube.com/embed/CaRVI8eLcy8?si=A2GHoojyreLy6X2C"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+
+
                         </div>
-
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                        </div>
-
-
                     </div>
                 </div>
-            </div>
 
-            <!--Inicio noticia #2-->
-            <div class="col-md-2 col-sm-10 text-center">
-                <div style="background: #fff url('./img/cao.png') no-repeat center center;
-                -webkit-background-size: contain;
-                -moz-background-size: contain;
-                -o-background-size:contain;
-                background-size: contain;
-                height: 200px;"></div>
-                <h3>Gato </h3>
-                <p> Queres saber curiosidades sobre os gatos
-                    <br>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noticia3">Ver
-                        Noticia </button>
+                <!--Inicio  #2-->
+                <div class="col-md-4 col-sm-12 text-center">
 
-                </p>
-            </div>
-            <!--Fim noticia #2-->
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img src="./img/gato.png"
+                            style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                    </div>
 
-            <!--modal noticia 2-->
-            <div id="noticia3" class="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+                    <h3>Gato</h3>
+                    <p> Queres saber curiosidades sobre os gatos
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
+                            Mais </button>
 
-                        <div class="modal-header">
-                            <h4 class="modal-title">O Carlos Fuma??</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
+                    </p>
+                </div>
+                <!--Fim  #2-->
 
-
+                <!--modal  2-->
+                <div id="gato" class="modal">
+                    <div class="modal-dialog">
                         <div class="modal-content">
-                            <iframe width="100%" height="315"
-                                src="https://www.youtube.com/embed/8z6MrVdS5WA?si=puf82vK3DNC0Gw2A"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <div class="modal-header">
+                                <h6 class="modal-title">Queres descobir 100 curiosidades sobre os gatos </h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+
+                            <div class="modal-content">
+                                <iframe width="100%" height="350"
+                                    src="https://www.youtube.com/embed/TMI7boloheo?si=0i8ASbDeM1VG1-dl"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+
+
                         </div>
-
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                        </div>
-
-
                     </div>
                 </div>
-            </div>
 
+                <!--Inicio #3-->
+                <div class="col-md-4 col-sm-12 text-center">
+
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img src="./img/cao_e_gato.png"
+                            style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                    </div>
+
+                    <h3>Animais</h3>
+                    <p> Queres saber curiosidades sobre os animais 
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cao">Ver
+                            Mais </button>
+
+                    </p>
+                </div>
+                <!--Fim #3-->
+
+                <!-- modal #3-->
+                <div id="animais" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h6 class="modal-title">Queres descobir como animais veem as cores </h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+
+                            <div class="modal-content">
+                                <iframe width="100%" height="350"
+                                    src="https://www.youtube.com/embed/Jgri7JXCa8E?si=2OHCBLSl9kyzmHdI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark">
-        <div class="container">
-            <div class="row" style="padding: 50px 0px;">
-                <div class="col-md-6 col-sm-12 text-light">Site Veterinarios</div>
-                <div class="col-md-3 col-sm-6 text-light">
-                    Email: <a href="mailto:a14597@oficina.pt" class="text-light">a14597@oficina.pt</a>
-                </div>
-                <div class="col-md-3 col-sm-6 text-light">
-                    Tlf: <a href="tel:918743675" class="text-light">+351 918 743 675</a>
-                </div>
+
+    <div class="container-fluid" style="background-color: gray; height: 100%;">
+        <div class="row" style="padding: 50px 20px;">
+            <div class="col-md-6 col-sm-12 text-light">Site Veterinarios</div>
+            <div class="col-md-3 col-sm-6 text-light">
+                Email: <a href="mailto:a14597@oficina.pt" class="text-light">a14597@oficina.pt</a>
+            </div>
+            <div class="col-md-3 col-sm-6 text-light">
+                Tlf: <a href="tel:918743675" class="text-light">+351 918 743 675</a>
             </div>
         </div>
-
     </div>
+
 </body>
 
 </html>
