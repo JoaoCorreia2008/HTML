@@ -1,7 +1,8 @@
 * { /*font-size: 20px;*/ text-transform: uppercase;}
 
 body {
-    margin: 2vw; /*view width*/
+    
+    background: white url("../img/bg-animal.png") repeat;
 }
 
 /** Padding **/
@@ -10,25 +11,36 @@ body {
 padding-top: 5.9px;
 }
 
+.pad-6-top{
+    padding-top: 150px ;
+}
+
+.pad7-lefht{
+    padding-left: 5%;
+}
+.pad7-right{
+    padding-right: 10%;
+}
+.pad-center{
+    position: 50% ;
+}
 /** Margin **/
 
 .mar-5-right{
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .mar-5-left{
-    margin-left: 5px;
+    margin-left: 10px;
 }
-
-
-
 
 .separador-topo{margin-top: 30px; }
+
 .img-responsive{
-    width: 95%;
-    max-width: 400px;
+    width: 580%;
+    max-width: 500px;
 }
 .img-responsivet{
-    width: 20%;
+    width: 40%;
     max-width: 60px;
 }
 .homebg{
@@ -79,3 +91,35 @@ padding-top: 5.9px;
 
     /*max-width: 1000px;*/
 }
+
+.navbar2{
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    border-radius: 50px;
+    color: white;
+}
+
+.navbar3{
+    width: 40%;
+    height: 50%;
+    background-color: blue;
+    border-radius: 50px;
+    color: azure;
+    
+}
+.navbarborda{
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+}
+.fontsize{
+    font-size: 12px;
+    text-align: right;
+}
+
+/* .bg{
+    background:gray; 
+    border-radius: 1000px;
+    width: 100px;
+    height: 50%;
+} */
