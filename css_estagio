@@ -59,11 +59,11 @@ padding-top: 5.9px;
 }
 
 .login {
-  background: #5E5DF0;
+  background: bisque;
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #000 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
   font-size: 16px;
