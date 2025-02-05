@@ -13,35 +13,67 @@
         <title>Site vet</title>
 </head>
 
+
 <body>
+    <!-- menu navbar -->
 
-    <div class="navbar">
-        <div class="container-fluid">
-            <div class="container-fluid">
-                <ul class="pad-5-top">
-                    <a class="login" href="./login.html">LOGIN</a>
-                </ul>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="background-color: gray !important;">
+        <div class="container" style="margin: 0 auto !important;">
+
+            <div class="col-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logotipo.png" style="height: 100px;">
+                </a>
             </div>
+
+            <div class="col-6">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Our services </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Curiosidades</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+
+                <div class="col-2 text-end">
+                    <a class="login" href="./login.html" style="text-align: center;">LOGIN</a>
+                </div>
+
         </div>
-    </div>
+    </nav>
+    
 
 
-    <div class="container-fluid">
+    
 
         <nav class="container navbar2">
             <div class="row mt-4">
                 <div class="col-5 col-md-4">
-                    <img src="./img/cao.png" class="img-responsive" />
-
+                    <div class="pad-5-top text-end">
+                            <img src="./img/animais.png" class="img-responsive "/>
+                    </div>
+                    
+                    
                 </div>
-                <div class="col-7 col-md-8 pad-6-top pad7-right pad7-lefht text-end ">
+                <div class="col-7 col-md-8 pad-5-top pad7-right pad7-lefht text-end ">
 
-                    <h4 class="text">VetComunity
+                    <h2 class="text">VetComunity
                         <br>
                         Cuidando de vidas
                         <br>
                         Conectando Proficionais
-                    </h4>
+                    </h2>
                     <br>
 
                     <p class="pad7-lefht fontsize">
@@ -52,20 +84,23 @@
                         veterinária!
                     </p>
 
-                    <div class="pad7-lefht">
-                        <div class=" container navbar3">
-                            <h1>ola</h1>
-                        </div>
-                    </div>
+
+                    <!-- <div class="pad7-lefht text-end ">
+                        <p id="borderimg2">
+                            <img src="img/cao2.png"style="margin-bottom: 0px; margin-top: -280px;" class="img-responsives">
+                        </p>
+                    </div> -->
+
 
                 </div>
+
             </div>
         </nav>
-        <div class="container mt-3 mb-5" style="background: bisque; height: 40%;">
+        <div class="container mt-3 mb-5" style="background: bisque; height: 40%; border-radius: 50px;">
             <div class="row">
                 <h1 class="text-center">CURIOSIDADES </h1>
                 <!--Inicio#1-->
-                <div class="col-md-4 col-sm-12 text-center">
+                <div class="col-md-4 text-center">
 
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                         <img src="./img/cao.png"
@@ -75,7 +110,9 @@
                     <h3>Cão</h3>
                     <p> Queres saber curiosidades sobre os cães
                         <br>
-                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:gray; border: 3px solid gray; border-radius: 999px;"
+                            data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
 
                     </p>
                 </div>
@@ -112,7 +149,7 @@
                 </div>
 
                 <!--Inicio  #2-->
-                <div class="col-md-4 col-sm-12 text-center">
+                <div class="col-md-4 text-center">
 
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                         <img src="./img/gato.png"
@@ -122,7 +159,9 @@
                     <h3>Gato</h3>
                     <p> Queres saber curiosidades sobre os gatos
                         <br>
-                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:gray; border: 3px solid gray; border-radius: 999px;"
+                            data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
 
                     </p>
                 </div>
@@ -159,7 +198,7 @@
                 </div>
 
                 <!--Inicio #3-->
-                <div class="col-md-4 col-sm-12 text-center">
+                <div class="col-md-4 text-center">
 
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                         <img src="./img/cao_e_gato.png"
@@ -167,9 +206,11 @@
                     </div>
 
                     <h3>Animais</h3>
-                    <p> Queres saber curiosidades sobre os animais 
+                    <p> Queres saber curiosidades sobre os animais
                         <br>
-                        <button type="button" class="btn btn-primary" style="background-color:gray; border: 3px solid gray;"   data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:gray; border: 3px solid gray; border-radius: 999px; "
+                            data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
 
                     </p>
                 </div>
@@ -208,7 +249,7 @@
 
             </div>
         </div>
-    </div>
+    
 
     <div class="container-fluid" style="background-color: gray; height: 100%;">
         <div class="row" style="padding: 50px 20px;">
