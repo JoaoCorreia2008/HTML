@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,35 +6,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>LOGIN</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="container-fluid">
-            <ul class="pad-5-top">
-                <a class="login" href="./index.html">voltar</a>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row mt3">
-            <div class="col-4">
-                <img src="./img/cao.png" class="img-responsive"/>
-                
-        </div>
-        <div class="col-8">
-            <h2 id="headerSobreMim" class="text-danger">Sobre mim ?</h2>
-
-                <p id=txt class="txt text-secondary">
-                    Los Pingüinos me la van a Mascar   
-                </p>
-                <p id=txt class="txt text-secondary">
-                    Los Pingüinos me la van a Mascar
-                    
-                </p>
-            </div>
-    </div>
-    
+    <form action="">
+        <h1>LOGIN</h1>
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+        <label for="password"> Password</label>
+        <input for="password" id="password">
+        <p>Lembrar-me</p>
+        <button>Entrar</button>
+        <p>
+        Forgot your password ?
+        <a href="https://www.infiniauto.pt/">Click here !</a>
+        <br>
+        Create acount ?
+        <a href="https://www.infiniauto.pt/">Click here !</a>
+        </p>
+        <ul class="pad-5-top">
+            <a class="login" href="./index.html">voltar</a>
+        </ul>
+    </form>
 </body>
 </html>
