@@ -1,4 +1,5 @@
 
+
 body {
     
     background: white url("../img/bg-animal.png") repeat;
@@ -14,7 +15,7 @@ padding-top: 20px;
     padding-top: 150px ;
 }
 
-.pad7-lefht{
+.pad7-left{
     padding-left: 5%;
 }
 .pad7-right{
