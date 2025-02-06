@@ -58,9 +58,9 @@
 
             <div id="login" class="modal navbarborda " style="color: white;">
                 <div class="modal-dialog modal-lg">
-                    <div class="modal-content" style="background-color: gray;">
+                    <div class="modal-content" style="background-color: gray; visibility: show;">
                         <div class="row ">
-                            <div class="col pad7-lefht" id="borderimg3" >
+                            <div class="col pad7-left" id="borderimg3" >
                                 <!-- Modal header é ode vais estar o titulo da modal -->
                                 <div class="modal-header" style="border: none;" >
                                     <h5 class="modal-title">LOGIN</h5>
