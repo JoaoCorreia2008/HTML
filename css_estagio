@@ -120,4 +120,13 @@ padding-top: 20px;
     padding: 10px  !important;
   }
 
-
+.border_lefht{
+    border-left: 2px solid black;
+    height: 400px;
+    left: 30%;
+    margin-left: -3px;
+    top: 0;
+}
+.form_style{
+    font-family: "Montserrat";
+}
