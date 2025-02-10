@@ -14,16 +14,17 @@
 </head>
 <style>
     #borderimg3 {
-      border: 50px solid transparent;
-      padding: 15px;
-      border-image: url(./img/borda_osso.png) 30% round;
+        border: 50px solid transparent;
+        padding: 15px;
+        border-image: url(./img/borda_osso.png) 30% round;
 
     }
 </style>
+
 <body>
     <!-- menu navbar -->
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="background-color: gray !important;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: gray !important;">
         <div class="container" style="margin: 0 auto !important;">
 
             <div class="col-4">
@@ -32,8 +33,13 @@
                 </a>
             </div>
 
-            <div class="col-6">
-                <ul class="nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: black; background-color:white; border: 3px solid white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link meumenu text-light">About Us</a>
                     </li>
@@ -50,63 +56,63 @@
                         <a class="nav-link meumenu text-light">Contact</a>
                     </li>
                 </ul>
-            </div>
-
-            <div class="col-2 text-end">
                 <a class="login" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#login">LOGIN</a>
             </div>
 
             <div id="login" class="modal navbarborda " style="color: white;">
                 <div class="modal-dialog modal-lg">
-                    <div class="modal-content" style="background-color: gray; visibility: show;">
+                    <div class="modal-content" style="background-color: gray;">
                         <div class="row ">
-                            <div class="col pad7-left" id="borderimg3" >
-                                <!-- Modal header é ode vais estar o titulo da modal -->
-                                <div class="modal-header" style="border: none;" >
-                                    <h5 class="modal-title">LOGIN</h5>
+                            <div class="col pad7-lefht form_style" id="borderimg3">
+                                <!-- Modal header é onde vai estar o titulo da modal -->
+                                <div class="modal-header" style="border: none;">
+                                    <h5 class="modal-title form_style">LOGIN</h5>
                                 </div>
                                 <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
                                 <div class="modal-content" style="border: none; background-color: gray;">
                                     <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                    <form action="./index.html">
+                                    <form action="./index.html" class="zonaForm">
                                         <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
                                         <label for="email">E-mail</label>
                                         <input type="email" id="email">
-                                        <br>
+
                                         <label for="password"> Password</label>
-                                        <input for="password" id="password">
-                                        <br>
-                                        <button>Entrar</button>
+                                        <input type="password" id="password">
+
+                                        <button class="style_button">Entrar</button>
                                         <p>
                                             Forgot your password ?
-                                            <button href="https://www.infiniauto.pt/" style="color: white; background-color: black;">Click here !</button> 
+                                            <button style=" background-color: bisque; font-weight: bold;"><a href="./create.html" style="color: black;">Click here !</a></button>
                                         </p>
                                     </form>
                                 </div>
                             </div>
 
-                            <div class="col border_lefht pad7-lefht" id="borderimg3">
+                            <div class="col pad7-lefht form_style" id="borderimg3">
                                 <!-- Modal header é ode vais estar o titulo da modal -->
                                 <div class="modal-header" style="border: none;">
-                                    <h5 class="modal-title t">CREATE ACOUNT</h5>
+                                    <h5 class="modal-title form_style">CREATE ACOUNT</h5>
                                 </div>
                                 <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
-                                <div class="modal-content" style="border: none;background-color: gray;">
+                                <div class="modal-content" style="border: none; background-color: gray;">
                                     <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                    <form action="./index.html">
+                                    <form action="./index.html" class="zonaForm" >
                                         <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
+                                        <label for="text"> Name</label>
+                                        <input type="text" id="text">
+
                                         <label for="email">E-mail</label>
                                         <input type="email" id="email">
-                                        <br>
+
                                         <label for="password"> Password</label>
-                                        <input for="password" id="password">
-                                        <br>
-                                        <button>criar</button>
+                                        <input type="password" id="password">
+
+                                        <button class="style_button">criar</button>
                                     </form>
                                 </div>
                             </div>
                             <!-- modal footer vai utilizar a parte de baixo da modal  -->
-                            <div class="modal-footer">
+                            <div class="modal-footer"style="flex-direction: column; border:none;">
                                 <!-- aqui temos o butão fechar que vais buscar a class login(que é o tema do butão) e também vais buscar o data-bs-dismiss que é para fechar a modal (podia ter metido o link para a pagina inicial só que ao fazer isto estou a voltar a pagina e demora muito mais do que o data-bs-dismiss) -->
                                 <a class="login" data-bs-dismiss="modal">Fechar</a>
                             </div>
@@ -124,14 +130,10 @@
 
     <nav class="container navbar2">
         <div class="row mt-4">
-            <div class="col-5 col-md-4">
-                <div class="pad-5-top text-end">
-                    <img src="./img/animais.png" class="img-responsive " />
-                </div>
-
-
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+                <img src="./img/animais.png" style=" height: 300px; width: 500px;" />
             </div>
-            <div class="col-7 col-md-8 pad-5-top pad7-right pad7-lefht text-end ">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pad-5-top pad7-right text-end ">
 
                 <h2 class="text">VetComunity
                     <br>
@@ -140,7 +142,6 @@
                     Conectando Proficionais
                 </h2>
                 <br>
-
                 <p class="pad7-lefht fontsize">
                     A VetComunity é o ponto de encontro para veterinários apaixonados! Aqui, partilhamos
                     conhecimento, trocamos experiências e acompanhamos as últimas novidades do mundo animal.
@@ -161,6 +162,7 @@
 
         </div>
     </nav>
+
     <div class="container mt-3 mb-5" style="background: bisque; height: 40%; border-radius: 50px;">
         <div class="row">
             <h1 class="text-center">CURIOSIDADES </h1>
@@ -314,7 +316,19 @@
 
         </div>
     </div>
+    <div class="container align-items-right" style="background-color: aliceblue; border-radius: 50px; margin-bottom: 100px;">
+        <br>
+        <div class="divInformacoes"> 
+            <h1 style="overflow: hidden;"> <b>sabias que:</b>oopppooo</h1>
+        </div>
+        <br>
+        <div class="divInformacoes "></div>
+        <br>
+        <div class="divInformacoes"></div>
+        <br>
 
+    </div>
+    
 
     <div class="container-fluid" style="background-color: gray; height: 100%;">
         <div class="row" style="padding: 50px 20px;">
