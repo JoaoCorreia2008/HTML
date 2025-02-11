@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,74 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Create Acount</title>
 </head>
+
 <body>
-    <form action="">
-        <h1>Create your acount</h1>
-        <label for="email">E-mail</label>
-        <input type="email" id="email">
-        <br>
-        <label for="password"> Password</label>
-        <input for="password" id="password">
-        <br>
-        <button>Entrar</button>
-        <ul class="pad-5-top">
-            <a class="login" href="./index.html">voltar</a>
-        </ul>
-    </form>
+    <nav class="navbar navbar-expand-lg" style="background-color: gray !important;">
+        <div class="container" style="margin: 0 auto !important;">
+
+            <div class="col-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logotipo.png" style="height: 100px;">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: black; background-color:white; border: 3px solid white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
+                    <li class="nav-item">
+                        <a class="nav-link meumenu text-light">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link meumenu text-light">Our services </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link meumenu text-light">Curiosidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link meumenu text-light">Contact</a>
+                    </li>
+                </ul>
+                <ul style="align-items: center; display: flex; justify-content: center;">
+                    <a class="login" style="text-align: center;" href="./index.html">VOLTAR</a>
+                </ul>
+
+            </div>
+    </nav>
+
+    <div class="container navbar2"
+        style="margin-top: 100px; display: flex; justify-content: center; width: 400px; margin-bottom: 100px; ">
+        <div class="row">
+            <div class="col">
+                <form action="./index.html" class="zonaForm" style="padding-top: 10px; padding-bottom: 20px;">
+                    <h2>Forgot your password</h2>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                    <br>
+                    <button>ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+    <div class="container-fluid" style="background-color: gray; height: 100px; padding:30px;bottom: 0; position: fixed;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-light">Site Veterinarios</div>
+            <div class="col-md-3 col-sm-6 text-light">
+                Email: <a href="mailto:a14597@oficina.pt" class="text-light">a14597@oficina.pt</a>
+            </div>
+            <div class="col-md-3 col-sm-6 text-light">
+                Tlf: <a href="tel:918743675" class="text-light">+351 918 743 675</a>
+            </div>
+        </div>
+    </div>
+
 </html>
