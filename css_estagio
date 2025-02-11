@@ -4,6 +4,7 @@
 body {
     
     background: white url("../img/bg-animal.png") repeat;
+    min-height: 900px;
 }
 
 /** Padding **/
@@ -69,6 +70,7 @@ padding-top: 20px;
   }
 /** FIM style forms**/
 
+/* INCIO estilo universal que uso no codigo button login*/
 .login {
   background: bisque;
   border-radius: 999px;
@@ -91,11 +93,11 @@ padding-top: 20px;
   border: 0;
   text-decoration: none;
 }
-
+/* FIM button login*/
 .navbar2{
     width: 100%;
     height: 50%;
-    background-color: gray;
+    background-color:  #58937f;
     border-radius: 50px;
     color: white;
 }
@@ -124,19 +126,18 @@ padding-top: 20px;
 
 
 .divInformacoes {
-    width: 225px;
-    height: 100px; /* Ajustei a altura para melhor visualização */
-    background: #fff;
+    width: 260px;
+    height: 100px;
+    background: gray;
     transition: width 2s;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    overflow: hidden;/* o overflow serve para o texto que passar o whidth(largura) vai esconder para não aparecer fora */
+    white-space: nowrap;/* o white-space serve para o texto não passe para a linha de baixo */
     padding: 10px;
-    
+    border-radius: 50px;
 }
 
 .divInformacoes:hover {
-    width: 600px;
+    width: 900px;
 }
 
 
