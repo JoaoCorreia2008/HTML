@@ -22,9 +22,10 @@
 </style>
 
 <body>
+
     <!-- menu navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: gray !important;">
+    <nav class="navbar navbar-expand-lg" style="background-color: orange">
         <div class="container" style="margin: 0 auto !important;">
 
             <div class="col-4">
@@ -39,7 +40,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
                     <li class="nav-item">
                         <a class="nav-link meumenu text-light">About Us</a>
                     </li>
@@ -56,7 +57,11 @@
                         <a class="nav-link meumenu text-light">Contact</a>
                     </li>
                 </ul>
-                <a class="login" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#login">LOGIN</a>
+                <ul style="align-items: center; display: flex; flex-direction: column; padding: 0px;">
+                    <a class="login" style="text-align: center;" data-bs-toggle="modal"
+                        data-bs-target="#login">LOGIN</a>
+                </ul>
+
             </div>
 
             <div id="login" class="modal navbarborda " style="color: white;">
@@ -82,7 +87,8 @@
                                         <button class="style_button">Entrar</button>
                                         <p>
                                             Forgot your password ?
-                                            <button style=" background-color: bisque; font-weight: bold;"><a href="./create.html" style="color: black;">Click here !</a></button>
+                                            <button style=" background-color: bisque; font-weight: bold;"><a
+                                                    href="./create.html" style="color: black;">Click here !</a></button>
                                         </p>
                                     </form>
                                 </div>
@@ -96,7 +102,7 @@
                                 <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
                                 <div class="modal-content" style="border: none; background-color: gray;">
                                     <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                    <form action="./index.html" class="zonaForm" >
+                                    <form action="./index.html" class="zonaForm">
                                         <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
                                         <label for="text"> Name</label>
                                         <input type="text" id="text">
@@ -112,7 +118,7 @@
                                 </div>
                             </div>
                             <!-- modal footer vai utilizar a parte de baixo da modal  -->
-                            <div class="modal-footer"style="flex-direction: column; border:none;">
+                            <div class="modal-footer" style="flex-direction: column; border:none;">
                                 <!-- aqui temos o butão fechar que vais buscar a class login(que é o tema do butão) e também vais buscar o data-bs-dismiss que é para fechar a modal (podia ter metido o link para a pagina inicial só que ao fazer isto estou a voltar a pagina e demora muito mais do que o data-bs-dismiss) -->
                                 <a class="login" data-bs-dismiss="modal">Fechar</a>
                             </div>
@@ -125,7 +131,7 @@
     </nav>
 
 
-
+    <!-- FIM menu navbar -->
 
 
     <nav class="container navbar2">
@@ -135,7 +141,8 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pad-5-top pad7-right text-end ">
 
-                <h2 class="text">VetComunity
+                <h2 class="text">
+                    <span style="color: orange;" class="h1">VetComunity</span>
                     <br>
                     Cuidando de vidas
                     <br>
@@ -149,21 +156,11 @@
                     Junte-se a uma comunidade dedicada ao bem-estar dos animais e à evolução da medicina
                     veterinária!
                 </p>
-
-
-                <!-- <div class="pad7-lefht text-end ">
-                        <p id="borderimg2">
-                            <img src="img/cao2.png"style="margin-bottom: 0px; margin-top: -280px;" class="img-responsives">
-                        </p>
-                    </div> -->
-
-
             </div>
-
         </div>
     </nav>
 
-    <div class="container mt-3 mb-5" style="background: bisque; height: 40%; border-radius: 50px;">
+    <div class="container mt-3 mb-5" style="background: orange; height: 40%; border-radius: 50px;">
         <div class="row">
             <h1 class="text-center">CURIOSIDADES </h1>
             <!--Inicio#1-->
@@ -316,32 +313,36 @@
 
         </div>
     </div>
-    <div class="container align-items-right" style="background-color: aliceblue; border-radius: 50px; margin-bottom: 100px;">
+    <div class="container align-items-right"
+        style="background-color: #58937f; border-radius: 50px; margin-bottom: 100px;">
+        <h1 class="text-center" style="color: black;">ABOUT US</h1>
         <br>
-        <div class="divInformacoes"> 
-            <h1 style="overflow: hidden;"> <b>sabias que:</b>oopppooo</h1>
+        <div class="divInformacoes">
+            <h1 style="color: white; padding-top: 13px;"> <b>VetComunity </b> é uma comunidade comfiavel </h1>
         </div>
         <br>
-        <div class="divInformacoes "></div>
+        <div class="divInformacoes ">
+            <h1 style="color: white;  padding-top: 13px;"> <b>VetComunity </b> acolhe todos os tipos de animais </h1>
+        </div>
         <br>
-        <div class="divInformacoes"></div>
+        <div class="divInformacoes">
+            <h1 style="color: white;  padding-top: 13px;"> <b>VetComunity</b> sempre disponivel para ajuda </h1>
+        </div>
         <br>
 
     </div>
-    
-
-    <div class="container-fluid" style="background-color: gray; height: 100%;">
-        <div class="row" style="padding: 50px 20px;">
-            <div class="col-md-6 col-sm-12 text-light">Site Veterinarios</div>
-            <div class="col-md-3 col-sm-6 text-light">
-                Email: <a href="mailto:a14597@oficina.pt" class="text-light">a14597@oficina.pt</a>
-            </div>
-            <div class="col-md-3 col-sm-6 text-light">
-                Tlf: <a href="tel:918743675" class="text-light">+351 918 743 675</a>
+        <div class="container-fluid" style="background-color: orange; height: 100px; padding:30px">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-light"><b>Site Veterinarios</b></div>
+                <div class="col-md-3 col-sm-6 text-light">
+                    <b>Email:</b>
+                    <a href="mailto:a14597@oficina.pt" class="text-light"><b>a14597@oficina.pt</b></a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-light">
+                    Tlf: <a href="tel:918743675" class="text-light"><b>+351 918 743 675</b></a>
+                </div>
             </div>
         </div>
-    </div>
-
 </body>
 
 </html>
