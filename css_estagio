@@ -7,6 +7,12 @@ body {
     min-height: 900px;
 }
 
+/*#region HEADER */
+.header {
+   background-color: #58937f; 
+}
+/*#endregion HEADER */
+
 /** Padding **/
 
 .pad-5-top{
