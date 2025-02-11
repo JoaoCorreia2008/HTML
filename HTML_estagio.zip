@@ -23,144 +23,151 @@
 
 <body>
 
-    <!-- menu navbar -->
+    <!-- HEADER -->
+    <div class="header" style="margin-bottom: 40px;">
 
-    <nav class="navbar navbar-expand-lg" style="background-color: orange">
-        <div class="container" style="margin: 0 auto !important;">
+        <!-- menu navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="margin: 0 auto !important;">
 
-            <div class="col-4">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="img/logotipo.png" style="height: 100px;">
-                </a>
-            </div>
+                <div class="col-4">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logotipo.png" style="height: 100px;">
+                    </a>
+                </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" style="color: black; background-color:white; border: 3px solid white;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
-                    <li class="nav-item">
-                        <a class="nav-link meumenu text-light">About Us</a>
-                    </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: black; background-color:white; border: 3px solid white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">About Us</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link meumenu text-light">Our services </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Our services </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link meumenu text-light">Curiosidades</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Curiosidades</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link meumenu text-light">Contact</a>
-                    </li>
-                </ul>
-                <ul style="align-items: center; display: flex; flex-direction: column; padding: 0px;">
-                    <a class="login" style="text-align: center;" data-bs-toggle="modal"
-                        data-bs-target="#login">LOGIN</a>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link meumenu text-light">Contact</a>
+                        </li>
+                    </ul>
+                    <ul style="align-items: center; display: flex; flex-direction: column; padding: 0px;">
+                        <a class="login" style="text-align: center;" data-bs-toggle="modal"
+                            data-bs-target="#login">LOGIN</a>
+                    </ul>
 
-            </div>
+                </div>
 
-            <div id="login" class="modal navbarborda " style="color: white;">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content" style="background-color: gray;">
-                        <div class="row ">
-                            <div class="col pad7-lefht form_style" id="borderimg3">
-                                <!-- Modal header é onde vai estar o titulo da modal -->
-                                <div class="modal-header" style="border: none;">
-                                    <h5 class="modal-title form_style">LOGIN</h5>
+                <div id="login" class="modal navbarborda " style="color: white;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background-color: gray;">
+                            <div class="row ">
+                                <div class="col pad7-lefht form_style" id="borderimg3">
+                                    <!-- Modal header é onde vai estar o titulo da modal -->
+                                    <div class="modal-header" style="border: none;">
+                                        <h5 class="modal-title form_style">LOGIN</h5>
+                                    </div>
+                                    <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
+                                    <div class="modal-content" style="border: none; background-color: gray;">
+                                        <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
+                                        <form action="./index.html" class="zonaForm">
+                                            <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
+                                            <label for="email">E-mail</label>
+                                            <input type="email" id="email">
+
+                                            <label for="password"> Password</label>
+                                            <input type="password" id="password">
+
+                                            <button class="style_button">Entrar</button>
+                                            <p>
+                                                Forgot your password ?
+                                                <button style=" background-color: bisque; font-weight: bold;"><a
+                                                        href="./create.html" style="color: black;">Click here !</a></button>
+                                            </p>
+                                        </form>
+                                    </div>
                                 </div>
-                                <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
-                                <div class="modal-content" style="border: none; background-color: gray;">
-                                    <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                    <form action="./index.html" class="zonaForm">
-                                        <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
-                                        <label for="email">E-mail</label>
-                                        <input type="email" id="email">
 
-                                        <label for="password"> Password</label>
-                                        <input type="password" id="password">
+                                <div class="col pad7-lefht form_style" id="borderimg3">
+                                    <!-- Modal header é ode vais estar o titulo da modal -->
+                                    <div class="modal-header" style="border: none;">
+                                        <h5 class="modal-title form_style">CREATE ACOUNT</h5>
+                                    </div>
+                                    <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
+                                    <div class="modal-content" style="border: none; background-color: gray;">
+                                        <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
+                                        <form action="./index.html" class="zonaForm">
+                                            <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
+                                            <label for="text"> Name</label>
+                                            <input type="text" id="text">
 
-                                        <button class="style_button">Entrar</button>
-                                        <p>
-                                            Forgot your password ?
-                                            <button style=" background-color: bisque; font-weight: bold;"><a
-                                                    href="./create.html" style="color: black;">Click here !</a></button>
-                                        </p>
-                                    </form>
+                                            <label for="email">E-mail</label>
+                                            <input type="email" id="email">
+
+                                            <label for="password"> Password</label>
+                                            <input type="password" id="password">
+
+                                            <button class="style_button">criar</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="col pad7-lefht form_style" id="borderimg3">
-                                <!-- Modal header é ode vais estar o titulo da modal -->
-                                <div class="modal-header" style="border: none;">
-                                    <h5 class="modal-title form_style">CREATE ACOUNT</h5>
+                                <!-- modal footer vai utilizar a parte de baixo da modal  -->
+                                <div class="modal-footer" style="flex-direction: column; border:none;">
+                                    <!-- aqui temos o butão fechar que vais buscar a class login(que é o tema do butão) e também vais buscar o data-bs-dismiss que é para fechar a modal (podia ter metido o link para a pagina inicial só que ao fazer isto estou a voltar a pagina e demora muito mais do que o data-bs-dismiss) -->
+                                    <a class="login" data-bs-dismiss="modal">Fechar</a>
                                 </div>
-                                <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
-                                <div class="modal-content" style="border: none; background-color: gray;">
-                                    <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                    <form action="./index.html" class="zonaForm">
-                                        <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
-                                        <label for="text"> Name</label>
-                                        <input type="text" id="text">
-
-                                        <label for="email">E-mail</label>
-                                        <input type="email" id="email">
-
-                                        <label for="password"> Password</label>
-                                        <input type="password" id="password">
-
-                                        <button class="style_button">criar</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- modal footer vai utilizar a parte de baixo da modal  -->
-                            <div class="modal-footer" style="flex-direction: column; border:none;">
-                                <!-- aqui temos o butão fechar que vais buscar a class login(que é o tema do butão) e também vais buscar o data-bs-dismiss que é para fechar a modal (podia ter metido o link para a pagina inicial só que ao fazer isto estou a voltar a pagina e demora muito mais do que o data-bs-dismiss) -->
-                                <a class="login" data-bs-dismiss="modal">Fechar</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </nav>
+        <!-- FIM menu navbar -->
 
-        </div>
-    </nav>
+        <!-- INFO VETCOMUNITY -->
+        <div class="container navbar2">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex ">
+                    <img src="./img/animais2.png" style=" height: 300px; width: 500px;" />
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pad-5-top pad7-right text-end ">
 
-
-    <!-- FIM menu navbar -->
-
-
-    <nav class="container navbar2">
-        <div class="row mt-4">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
-                <img src="./img/animais.png" style=" height: 300px; width: 500px;" />
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pad-5-top pad7-right text-end ">
-
-                <h2 class="text">
-                    <span style="color: orange;" class="h1">VetComunity</span>
-                    <br>
-                    Cuidando de vidas
-                    <br>
-                    Conectando Proficionais
-                </h2>
-                <br>
-                <p class="pad7-lefht fontsize">
-                    A VetComunity é o ponto de encontro para veterinários apaixonados! Aqui, partilhamos
-                    conhecimento, trocamos experiências e acompanhamos as últimas novidades do mundo animal.
-                    <br>
-                    Junte-se a uma comunidade dedicada ao bem-estar dos animais e à evolução da medicina
-                    veterinária!
-                </p>
+                    <h2 class="text">
+                        <span style="color: orange;" class="h1">VetComunity</span>
+                        <br>
+                        Cuidando de vidas
+                        <br>
+                        Conectando Proficionais
+                    </h2>
+                    <p class="pad7-lefht fontsize text-white">
+                        A VetComunity é o ponto de encontro para veterinários apaixonados! Aqui, partilhamos
+                        conhecimento, trocamos experiências e acompanhamos as últimas novidades do mundo animal.
+                        <br>
+                        Junte-se a uma comunidade dedicada ao bem-estar dos animais e à evolução da medicina
+                        veterinária!
+                    </p>
+                </div>
             </div>
         </div>
-    </nav>
+        <!-- FIM VETCOMUNITY -->
+    </div>
 
-    <div class="container mt-3 mb-5" style="background: orange; height: 40%; border-radius: 50px;">
+
+
+
+
+
+
+    <div class="container mt-3 mb-5 " style="background: #e5e5e5bd; height: 40%; border-radius: 30px; margin-top: 20px; box-shadow: 0px 0px 33px -12px rgba(68, 68, 68, 0.66);">
         <div class="row">
             <h1 class="text-center">CURIOSIDADES </h1>
             <!--Inicio#1-->
@@ -175,7 +182,7 @@
                 <p> Queres saber curiosidades sobre os cães
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:gray; border: 3px solid gray; border-radius: 999px;"
+                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px;"
                         data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
 
                 </p>
@@ -224,7 +231,7 @@
                 <p> Queres saber curiosidades sobre os gatos
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:gray; border: 3px solid gray; border-radius: 999px;"
+                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px;"
                         data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
 
                 </p>
@@ -273,7 +280,7 @@
                 <p> Queres saber curiosidades sobre os animais
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:gray; border: 3px solid gray; border-radius: 999px; "
+                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px; "
                         data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
 
                 </p>
@@ -314,7 +321,7 @@
         </div>
     </div>
     <div class="container align-items-right"
-        style="background-color: #58937f; border-radius: 50px; margin-bottom: 100px;">
+        style="background-color: #58937f; border-radius: 30px; margin-bottom: 100px;">
         <h1 class="text-center" style="color: black;">ABOUT US</h1>
         <br>
         <div class="divInformacoes">
