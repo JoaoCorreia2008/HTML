@@ -16,7 +16,7 @@
     #borderimg {
         border: 50px solid transparent;
         padding: 15px;
-        border-image: url(./img/borda_osso.png) 30% round;
+        border-image: url(./img/borda_osso_branco.png) 30% round;
     }
 
     #borderimgbottom {
@@ -85,20 +85,19 @@
                                     <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
                                     <div class="modal-content" style="border: none; background-color: gray;">
                                         <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                        <form action="./index.html" class="zonaForm">
+                                        <form action="./index.html" class="zonaForm was-validated">
                                             <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
                                             <label for="email">E-mail</label>
-                                            <input type="email" id="email">
+                                            <input type="email" id="email" required class="form-control">
 
                                             <label for="password"> Password</label>
-                                            <input type="password" id="password">
+                                            <input type="password" id="password" required class="form-control">
 
                                             <button class="style_button">Entrar</button>
                                             <p>
                                                 Forgot your password ?
                                                 <button style=" background-color: bisque; font-weight: bold;"><a
-                                                        href="./create.html" style="color: black;">Click here
-                                                        !</a></button>
+                                                        href="./create.html" style="color: black;">Click here!</a></button>
                                             </p>
                                         </form>
                                     </div>
@@ -112,16 +111,16 @@
                                     <!-- Modal content é o que recebe o contiudo da modal basicamente o que vai aparecer -->
                                     <div class="modal-content" style="border: none; background-color: gray;">
                                         <!-- aqui o from é tag para dizer que estamos a iniciar / criar um formulario que vai receber os principais metodos e atributos que recebe em http, então este formulario executar um get(vai pegar nos dados) e um post (colocar os dados), o action especifica para onde vai ser enviado os dados quando o formulario for enviado  -->
-                                        <form action="./index.html" class="zonaForm">
+                                        <form action="./index.html" class="zonaForm was-validated">
                                             <!-- O primeiro input será do tipo email  e o segundo input do tipo password. Estes inputs estão realcionados com o id correspondente para relacioná-los com o seu label ( que é o texto que vai aparecer a frente do input ).-->
                                             <label for="text"> Name</label>
-                                            <input type="text" id="text">
+                                            <input type="text" id="text" required class="form-control">
 
                                             <label for="email">E-mail</label>
-                                            <input type="email" id="email">
+                                            <input type="email" id="email" required class="form-control">
 
                                             <label for="password"> Password</label>
-                                            <input type="password" id="password">
+                                            <input type="password" id="password" required class="form-control">
 
                                             <button class="style_button">criar</button>
                                         </form>
@@ -369,7 +368,155 @@
     <div class="container"
         style="background-color: #e5e5e5; border-radius: 30px ; margin-bottom: 100px; padding: inherit;" id="Our services">
         <div class="row">
-            <h1 class="text-center" style="color: white;">OUR SERVICES</h1>
+            <h1 class="text-center">CURIOSIDADES </h1>
+            <!--Inicio#1-->
+            <div class="col-md-4 text-center">
+
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <img src="./img/cao.png"
+                        style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                </div>
+
+                <h3>Cão</h3>
+                <p> Queres saber curiosidades sobre os cães
+                    <br>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px;"
+                        data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
+
+                </p>
+            </div>
+            <!--Fim #1-->
+
+            <!-- modal #1-->
+            <div id="cao" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h6 class="modal-title">Queres descobir 100 coriosidades sobre os cães </h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+
+                        <div class="modal-content">
+                            <iframe width="100%" height="350"
+                                src="https://www.youtube.com/embed/CaRVI8eLcy8?si=A2GHoojyreLy6X2C"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Inicio  #2-->
+            <div class="col-md-4 text-center">
+
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <img src="./img/gato.png"
+                        style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                </div>
+
+                <h3>Gato</h3>
+                <p> Queres saber curiosidades sobre os gatos
+                    <br>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px;"
+                        data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
+
+                </p>
+            </div>
+            <!--Fim  #2-->
+
+            <!--modal  2-->
+            <div id="gato" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h6 class="modal-title">Queres descobir 100 curiosidades sobre os gatos </h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+
+                        <div class="modal-content">
+                            <iframe width="100%" height="350"
+                                src="https://www.youtube.com/embed/TMI7boloheo?si=0i8ASbDeM1VG1-dl"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Inicio #3-->
+            <div class="col-md-4 text-center">
+
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <img src="./img/cao_e_gato.png"
+                        style=" height: 200px; width: 200px; border-radius: 1000px; border: 3px solid grey; " />
+                </div>
+
+                <h3>Animais</h3>
+                <p> Queres saber curiosidades sobre os animais
+                    <br>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px; "
+                        data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
+
+                </p>
+            </div>
+            <!--Fim #3-->
+
+            <!-- modal #3-->
+            <div id="animais" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h6 class="modal-title">Queres descobir como animais veem as cores </h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+
+                        <div class="modal-content">
+                            <iframe width="100%" height="350"
+                                src="https://www.youtube.com/embed/Jgri7JXCa8E?si=2OHCBLSl9kyzmHdI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <!-- FIM ABOUT US-->
