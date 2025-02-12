@@ -1,0 +1,133 @@
+body {
+    
+    background: white url("../img/bg-animal.png") repeat;
+    min-height: 900px;
+}
+
+
+/*#region HEADER */
+.header {
+   background-color: #58937f; 
+}
+
+.meumenu{
+    text-transform: uppercase;
+    padding: 10px  !important;
+    border-radius: 50px;
+  }
+
+.meumenu:hover{
+    border-radius: 50px;
+    background-color: black;
+  }
+/*#endregion HEADER */
+
+
+/** INICIO Padding **/
+
+.pad-5-top{
+padding-top: 20px;
+}
+
+.pad-6-top{
+    padding-top: 150px ;
+}
+
+.pad7-left{
+    padding-left: 5%;
+}
+.pad7-right{
+    padding-right: 10%;
+}
+/** FIM Padding **/
+
+
+/** INICIO style forms dentro da modal **/
+.zonaForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form_style{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.style_button {
+    padding: 10px;
+    align-self: center;
+    width: 160px;
+    border-radius: 30px;
+    background-image: linear-gradient(bisque, bisque);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    border: none;
+    font-size: 19px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+/** FIM style forms**/
+
+
+/* INCIO estilo universal que uso no codigo button login*/
+.login {
+  background: bisque;
+  border-radius: 999px;
+  box-shadow: #000 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 29px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-decoration: none;
+}
+/* FIM button login*/
+
+/* INICIO Isto esta a ser usadado no ABOUT US*/
+.divInformacoes {
+    width: 260px;
+    height: 100px;
+    background: #d78b00;
+    transition: width 2s;
+    overflow: hidden;/* o overflow serve para o texto que passar o whidth(largura) vai esconder para não aparecer fora */
+    white-space: nowrap;/* o white-space serve para o texto não passe para a linha de baixo */
+    padding: 10px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px ;
+}
+
+.divInformacoes:hover {
+    width: 900px;
+}
+/* FIM Isto esta a ser usadado no ABOUT US*/
+
+
+
+
+
+
+/* Inicio css que não esta a ser  usado mas se precisar esta aqui */
+
+/* .img-responsive{
+
+    width: 500px;
+    max-width: 550px; 
+    padding-top: 30px;
+    padding-left: 20px;
+} */
+
+
+
+/* FIM do css que não esta a ser  usado mas se precisar esta aqui */
