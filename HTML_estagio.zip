@@ -13,17 +13,22 @@
         <title>Site vet</title>
 </head>
 <style>
-    #borderimg3 {
+    #borderimg {
         border: 50px solid transparent;
         padding: 15px;
         border-image: url(./img/borda_osso.png) 30% round;
+    }
 
+    #borderimgbottom {
+        border-bottom: 100px solid transparent;
+        border-image: url(./img/borda_osso.png) 40% round;
+        margin-bottom: 50px;
     }
 </style>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- INICIO HEADER -->
     <div class="header" style="margin-bottom: 40px;">
 
         <!-- menu navbar -->
@@ -37,26 +42,28 @@
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation" style="color: black; background-color:white; border: 3px solid white;">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"
+                    style="color: black; background-color:white; border: 3px solid white;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
+
                         <li class="nav-item">
-                            <a class="nav-link meumenu text-light">About Us</a>
+                            <a class="nav-link meumenu text-light" href="#Curiosidades">Curiosidades</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link meumenu text-light">Our services </a>
+                            <a class=" nav-link meumenu text-light" href="#ABOUT US">About Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link meumenu text-light">Curiosidades</a>
+                            <a class="nav-link meumenu text-light" href="#Our services">Our services </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link meumenu text-light">Contact</a>
+                            <a class="nav-link meumenu text-light" href="#Contact">Contact</a>
                         </li>
                     </ul>
                     <ul style="align-items: center; display: flex; flex-direction: column; padding: 0px;">
@@ -66,11 +73,11 @@
 
                 </div>
 
-                <div id="login" class="modal navbarborda " style="color: white;">
+                <div id="login" class="modal" style="color: white;">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content" style="background-color: gray;">
                             <div class="row ">
-                                <div class="col pad7-lefht form_style" id="borderimg3">
+                                <div class="col pad7-lefht form_style" id="borderimg">
                                     <!-- Modal header é onde vai estar o titulo da modal -->
                                     <div class="modal-header" style="border: none;">
                                         <h5 class="modal-title form_style">LOGIN</h5>
@@ -90,13 +97,14 @@
                                             <p>
                                                 Forgot your password ?
                                                 <button style=" background-color: bisque; font-weight: bold;"><a
-                                                        href="./create.html" style="color: black;">Click here !</a></button>
+                                                        href="./create.html" style="color: black;">Click here
+                                                        !</a></button>
                                             </p>
                                         </form>
                                     </div>
                                 </div>
 
-                                <div class="col pad7-lefht form_style" id="borderimg3">
+                                <div class="col pad7-lefht form_style" id="borderimg">
                                     <!-- Modal header é ode vais estar o titulo da modal -->
                                     <div class="modal-header" style="border: none;">
                                         <h5 class="modal-title form_style">CREATE ACOUNT</h5>
@@ -134,21 +142,21 @@
         <!-- FIM menu navbar -->
 
         <!-- INFO VETCOMUNITY -->
-        <div class="container navbar2">
+        <div class="container">
             <div class="row mt-4">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex ">
                     <img src="./img/animais2.png" style=" height: 300px; width: 500px;" />
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pad-5-top pad7-right text-end ">
 
-                    <h2 class="text">
+                    <h2 class="text-white">
                         <span style="color: orange;" class="h1">VetComunity</span>
                         <br>
                         Cuidando de vidas
                         <br>
                         Conectando Proficionais
                     </h2>
-                    <p class="pad7-lefht fontsize text-white">
+                    <p class="pad7-lefht text-white">
                         A VetComunity é o ponto de encontro para veterinários apaixonados! Aqui, partilhamos
                         conhecimento, trocamos experiências e acompanhamos as últimas novidades do mundo animal.
                         <br>
@@ -160,14 +168,12 @@
         </div>
         <!-- FIM VETCOMUNITY -->
     </div>
+    <!-- FIM HEADER -->
 
-
-
-
-
-
-
-    <div class="container mt-3 mb-5 " style="background: #e5e5e5bd; height: 40%; border-radius: 30px; margin-top: 20px; box-shadow: 0px 0px 33px -12px rgba(68, 68, 68, 0.66);">
+    <!-- INICIO CURIOSIDADES-->
+    <div class="container mt-3 mb-5 "
+        style="background: #e5e5e5bd; height: 40%; border-radius: 30px; margin-top: 20px; box-shadow: 0px 0px 33px -12px rgba(68, 68, 68, 0.66);"
+        id="Curiosidades">
         <div class="row">
             <h1 class="text-center">CURIOSIDADES </h1>
             <!--Inicio#1-->
@@ -182,7 +188,7 @@
                 <p> Queres saber curiosidades sobre os cães
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px;"
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px;"
                         data-bs-toggle="modal" data-bs-target="#cao">Ver Mais </button>
 
                 </p>
@@ -231,7 +237,7 @@
                 <p> Queres saber curiosidades sobre os gatos
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px;"
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px;"
                         data-bs-toggle="modal" data-bs-target="#gato">Ver Mais </button>
 
                 </p>
@@ -280,7 +286,7 @@
                 <p> Queres saber curiosidades sobre os animais
                     <br>
                     <button type="button" class="btn btn-primary"
-                        style="background-color:#d78b00; border: 3px solid gray; border-radius: 999px; "
+                        style="background-color:#d78b00; border: 3px solid #d78b00; border-radius: 999px; "
                         data-bs-toggle="modal" data-bs-target="#animais">Ver Mais </button>
 
                 </p>
@@ -320,36 +326,71 @@
 
         </div>
     </div>
-    <div class="container align-items-right"
-        style="background-color: #58937f; border-radius: 30px; margin-bottom: 100px;">
-        <h1 class="text-center" style="color: black;">ABOUT US</h1>
-        <br>
-        <div class="divInformacoes">
-            <h1 style="color: white; padding-top: 13px;"> <b>VetComunity </b> é uma comunidade comfiavel </h1>
-        </div>
-        <br>
-        <div class="divInformacoes ">
-            <h1 style="color: white;  padding-top: 13px;"> <b>VetComunity </b> acolhe todos os tipos de animais </h1>
-        </div>
-        <br>
-        <div class="divInformacoes">
-            <h1 style="color: white;  padding-top: 13px;"> <b>VetComunity</b> sempre disponivel para ajuda </h1>
-        </div>
-        <br>
+    <!-- FIM CURIOSIDADES-->
 
-    </div>
-        <div class="container-fluid" style="background-color: orange; height: 100px; padding:30px">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 text-light"><b>Site Veterinarios</b></div>
-                <div class="col-md-3 col-sm-6 text-light">
-                    <b>Email:</b>
-                    <a href="mailto:a14597@oficina.pt" class="text-light"><b>a14597@oficina.pt</b></a>
+    <!--INICIO da borda que separa -->
+    <div class="container" id="borderimgbottom"></div>
+    <!--FIM da borda que separa -->
+
+    <!-- INICIO ABOUT US-->
+    <div class="container"
+        style="background-color: #58937f; border-radius: 30px ; margin-bottom: 100px; padding: inherit;" id="ABOUT US">
+        <div class="row">
+            <h1 class="text-center" style="color: white;">ABOUT US</h1>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                style="display: flex; flex-direction: column;padding-bottom: 20px;">
+                <div class="divInformacoes">
+                    <h1 style="color: black; padding-top: 13px;"> <b><span style="color: white;"> VetComunity
+                            </span></b> é uma
+                        comunidade comfiavel </h1>
                 </div>
-                <div class="col-md-3 col-sm-6 text-light">
-                    Tlf: <a href="tel:918743675" class="text-light"><b>+351 918 743 675</b></a>
+                <br>
+                <div class="divInformacoes">
+                    <h1 style="color: black;  padding-top: 13px;"> <b><span style="color: white;"> VetComunity
+                            </span></b>
+                        acolhe todos os tipos de animais </h1>
+                </div>
+                <br>
+                <div class="divInformacoes">
+                    <h1 style="color: black;  padding-top: 13px;"> <b><span style="color: white;"> VetComunity
+                            </span></b>
+                        sempre disponiveis para ajudar </h1>
                 </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex"
+                style="display: flex; justify-content: flex-end;"><img src="./img/animais3.png" alt="animais3"
+                    width="400px"></div>
         </div>
+    </div>
+    <!-- FIM ABOUT US-->
+
+
+    <!-- INICIO ABOUT US-->
+    <div class="container"
+        style="background-color: #e5e5e5; border-radius: 30px ; margin-bottom: 100px; padding: inherit;" id="Our services">
+        <div class="row">
+            <h1 class="text-center" style="color: white;">OUR SERVICES</h1>
+        </div>
+    </div>
+    <!-- FIM ABOUT US-->
+
+
+    <!-- INICIO Contact -->
+    <div class="container-fluid" style="background-color: #58937f; height: 100px; padding:30px" id="Contact">
+        <div class="row">
+            <div class="col-md-6 col-sm-12" style="color: orange;"><b>SITE VETCOMUNITY</b></div>
+            <div class="col-md-3 col-sm-6 text-light">
+                <b>Email:</b>
+                <a href="mailto:a14597@oficina.pt" class="text-light"><b>a14597@oficina.pt</b></a>
+            </div>
+            <div class="col-md-3 col-sm-6 text-light">
+                <b>Tlf:</b>
+                <a href="tel:918743675" class="text-light"><b>+351 918 743 675</b></a>
+            </div>
+        </div>
+    </div>
+    <!-- FIM Contact -->
+
 </body>
 
 </html>
